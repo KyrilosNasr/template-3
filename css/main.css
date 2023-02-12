@@ -59,6 +59,8 @@ a {
 .header {
   background-color: white;
   position: relative;
+  box-shadow: 0 0 10px #ddd;
+
 }
 .header .container {
   display: flex;
