@@ -117,14 +117,14 @@ a {
 .landing-page::before {
   content: "";
   position: absolute;
-  top: -40px;
   left: 0;
-  background-color: #ececec;
+  top: -40px;
   width: 100%;
   height: 100%;
+  background-color: #ececec;
+  z-index: -1;
   transform: skewY(-6deg);
   transform-origin: top left;
-  z-index: -1;
 }
 .landing-page .container {
   min-height: calc(100vh - 72px);
@@ -136,6 +136,9 @@ a {
   font-size: 40px;
   margin: 0;
   letter-spacing: -2px;
+}
+.landing-page .text {
+  flex: 1;
 }
 .landing-page .text p {
   font-size: 23px;
@@ -158,6 +161,18 @@ a {
   }
   50% {
     top: -50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .landing-page .text {
+    text-align: center;
+  }
+  .landing-page .text p {
+    margin: 10px auto;
+  }
+  .landing-page .image {
+    display: none;
   }
 }
 /* Landing-page End*/
