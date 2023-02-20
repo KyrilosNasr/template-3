@@ -75,6 +75,53 @@ ul {
   justify-content: center;
   align-items: center;
 }
+
+.header .mega-menu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 30px;
+  background-color: white;
+  border-bottom: 3px solid var(--main-color);
+  z-index: 100;
+  display: flex;
+  gap: 40px;
+  top: calc(100% + 50px);
+  transition: top var(--main-transition), opacity var(--main-transition);
+}
+
+.mega-menu .image img {
+  max-width: 100%;
+}
+@media (max-width:991px){
+  .mega-menu .image{
+    display:none;
+  }
+}
+.header .mega-menu .links {
+  min-width: 250px;
+}
+.header .mega-menu .links li {
+}
+
+.header .mega-menu .links li::before {
+  content: "";
+}
+
+.header .mega-menu .links li:hover:before {
+}
+
+.header .mega-menu .links li a {
+  color: var(--main-color);
+  padding: 15px;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header .mega-menu .links li a svg {
+  margin-right: 10px;
+}
 @media (max-width: 767px) {
   .header .logo {
     width: 100%;
